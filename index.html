@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPPlugins - Static Libraries Repo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #1a1a2e;
+            --secondary-bg: #16213e;
+            --accent-color: #e94560;
+            --text-color: #e0e0e0;
+            --light-text: #ffffff;
+            --border-color: #0f3460;
+            --shadow-color: rgba(0, 0, 0, 0.4);
+            --button-hover: #b42840;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        body::before,
+        body::after {
+            content: '';
+            position: absolute;
+            background: var(--secondary-bg);
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        body::before {
+            width: 300px;
+            height: 300px;
+            top: -50px;
+            left: -50px;
+            background: var(--accent-color);
+            opacity: 0.2;
+        }
+
+        body::after {
+            width: 400px;
+            height: 400px;
+            bottom: -80px;
+            right: -80px;
+        }
+
+        .container {
+            background-color: var(--secondary-bg);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px var(--shadow-color);
+            padding: 40px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .container::before,
+        .container::after {
+            content: '';
+            position: absolute;
+            background-color: rgba(233, 69, 96, 0.1);
+            border-radius: 5px;
+            transform: rotate(45deg);
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .container::before {
+            width: 60px;
+            height: 60px;
+            top: -30px;
+            left: -30px;
+        }
+
+        .container::after {
+            width: 80px;
+            height: 80px;
+            bottom: -40px;
+            right: -40px;
+            background-color: rgba(15, 52, 96, 0.2);
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em;
+            font-weight: 700;
+            color: var(--light-text);
+            letter-spacing: -2px;
+        }
+
+        .logo-wp {
+            color: var(--accent-color);
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+        }
+
+        .logo-plugins {
+            color: var(--light-text);
+        }
+
+        .main-content {
+            margin-bottom: 40px;
+        }
+
+        .description {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            color: var(--text-color);
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .call-to-action {
+            margin-top: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--light-text);
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
+        }
+
+        .button:hover {
+            background-color: var(--button-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(233, 69, 96, 0.6);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: var(--text-color);
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.8em;
+            }
+            .container {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">
+                <span class="logo-wp">WP</span><span class="logo-plugins">Plugins</span>
+            </h1>
+        </header>
+        <main class="main-content">
+            <p class="description">
+                Just a repository to import and adapt WordPress plugins for use in static websites, providing essential functionality without the complexity of a full CMS.
+            </p>
+            <div class="call-to-action">
+                <a href="https://github.com/your-user/your-wpplugins-repo" target="_blank" rel="noopener noreferrer" class="button">
+                    Explore on GitHub
+                </a>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2023 WPPlugins. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
