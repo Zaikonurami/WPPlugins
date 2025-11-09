@@ -137,6 +137,38 @@
             margin-right: auto;
         }
 
+        .plugins-list {
+            background-color: var(--primary-bg);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .plugins-list h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5em;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .plugins-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .plugins-list li {
+            font-size: 1em;
+            padding: 8px 0;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+            color: var(--text-color);
+        }
+
+        .plugins-list li:last-child {
+            border-bottom: none;
+        }
+
         .call-to-action {
             margin-top: 25px;
         }
@@ -176,6 +208,29 @@
             .container {
                 padding: 30px;
             }
+            .plugins-list h2 {
+                font-size: 1.3em;
+            }
+            .plugins-list li {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 2.2em;
+                letter-spacing: -1px;
+            }
+            .container {
+                padding: 20px;
+                border-radius: 10px;
+            }
+            .plugins-list h2 {
+                font-size: 1.1em;
+            }
+            .plugins-list li {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -190,14 +245,22 @@
             <p class="description">
                 Just a repository to import and adapt WordPress plugins for use in static websites, providing essential functionality without the complexity of a full CMS.
             </p>
+
+            <div class="plugins-list">
+                <h2>Available Plugins</h2>
+                <ul>
+                    <li>Revolution Slider <span style="color: var(--accent-color);">version 6.7.38</span></li>
+                    </ul>
+            </div>
+
             <div class="call-to-action">
-                <a href="https://github.com/your-user/your-wpplugins-repo" target="_blank" rel="noopener noreferrer" class="button">
+                <a href="https://github.com/Zaikonurami/WPPlugins" target="_blank" rel="noopener noreferrer" class="button">
                     Explore on GitHub
                 </a>
             </div>
         </main>
         <footer class="footer">
-            <p>&copy; 2023 WPPlugins. All rights reserved.</p>
+            <p>&copy; 2025 WPPlugins. Powered by Zaiko.Works</p>
         </footer>
     </div>
 </body>
